@@ -44,6 +44,11 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
+        <div class="login-sign-up">
+            <a>Login</a><span> / </span>
+            <a>Sign up</a>
+        </div>
+
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'u3agetemplate' ); ?></button>
 			<?php

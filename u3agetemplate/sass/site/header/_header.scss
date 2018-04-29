@@ -1,0 +1,42 @@
+
+.site-header {
+background-color: crimson;
+  color: #fff;
+
+  @media screen and (min-width: $query__small) {
+
+  }
+}
+
+.site-branding {
+  width: 50%;
+  height: 90px;
+  float: left;
+}
+
+.login-sign-up {
+  width: calc(50% - 10px);
+  line-height: 90px;
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+}
+
+header nav {
+  background-color: black;
+  line-height: 50px;
+  border-bottom: 1px solid #404040;
+}
+header p.site-description {
+  margin: 0;
+}
+header nav ul {
+  width: 100%;
+}
+header nav ul li {
+  width: 25%;
+  text-align: center;
+}
+header nav ul li a {
+  color: white;
+}
