@@ -722,50 +722,43 @@ site-content {
 
 .site-branding {
   width: 50%;
-  height: 100px;
+  height: 90px;
   float: left;
   display: flex;
   padding-left: 2em;
   flex: 1 0 auto; }
 
-.custom-logo-link {
+custom-logo-link {
   margin-right: 1em; }
-  .custom-logo-link img {
+  custom-logo-link img {
     display: block;
-    height: 65pc;
+    height: 65px;
     width: auto; }
 
 .site-branding-text {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-
-.login-sign-up {
-  width: calc(50% - 10px);
-  line-height: 90px;
-  float: right;
-  margin-right: 10px;
-  text-align: right; }
-
-header nav {
-  background-color: #333;
-  line-height: 50px; }
-
-header p.site-description {
-  margin: 0; }
-
-header nav ul {
-  width: 100%; }
-
-header nav ul li {
-  width: 25%;
-  text-align: center; }
-
-header nav ul li a {
-  color: white; }
-
-li a:hover {
-  background-color: #666666; }
+  .site-branding-text .login-sign-up {
+    width: calc(50% - 10px);
+    line-height: 90px;
+    float: right;
+    margin-right: 10px;
+    text-align: right; }
+  .site-branding-text header nav {
+    background-color: #333;
+    line-height: 50px; }
+  .site-branding-text header p.site-description {
+    margin: 0; }
+  .site-branding-text header nav ul {
+    width: 100%; }
+  .site-branding-text header nav ul li {
+    width: 25%;
+    text-align: center; }
+  .site-branding-text header nav ul li a {
+    color: white; }
+  .site-branding-text li a:hover {
+    background-color: #666666; }
 
 /*--------------------------------------------------------------
 ## Footer layout
