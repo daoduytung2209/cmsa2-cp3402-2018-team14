@@ -1,15 +1,6 @@
-.header-image{
-  max-height: 60vh;
-  overflow: hidden;
-
-  img{
-    display: block;
-    width: 100vw;
-  }
-}
 
 .site-header {
-background-color: #348080;
+background-color: crimson;
   color: #fff;
 
   @media screen and (min-width: $query__small) {
@@ -19,31 +10,9 @@ background-color: #348080;
 
 .site-branding {
   width: 50%;
-  height: 100px;
+  height: 90px;
   float: left;
-  display: flex;
-  padding-left: 2em;
-  flex: 1 0 auto;
 }
-
-.custom-logo-link{
-  margin-right: 1em;
-
-  img{
-    display: block;
-    height: 65pc;
-    width: auto;
-  }
-}
-
-.site-branding-text{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  //height: 65px;
-
-}
-
 
 .login-sign-up {
   width: calc(50% - 10px);
@@ -53,11 +22,10 @@ background-color: #348080;
   text-align: right;
 }
 
-
 header nav {
-  background-color: #333;
+  background-color: black;
   line-height: 50px;
-
+  border-bottom: 1px solid #404040;
 }
 header p.site-description {
   margin: 0;
@@ -68,12 +36,7 @@ header nav ul {
 header nav ul li {
   width: 25%;
   text-align: center;
-
 }
 header nav ul li a {
   color: white;
-}
-
-li a:hover{
-  background-color: #666666;
 }
