@@ -1,8 +1,4 @@
-
 .site-header {
-background-color: crimson;
-  color: #fff;
-
   @media screen and (min-width: $query__small) {
 
   }
@@ -27,16 +23,20 @@ header nav {
   line-height: 50px;
   border-bottom: 1px solid #404040;
 }
+
 header p.site-description {
   margin: 0;
 }
+
 header nav ul {
   width: 100%;
 }
+
 header nav ul li {
   width: 25%;
   text-align: center;
 }
+
 header nav ul li a {
   color: white;
 }

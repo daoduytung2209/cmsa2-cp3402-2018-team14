@@ -709,10 +709,6 @@ site-content {
 /*--------------------------------------------------------------
 ## Header layout
 --------------------------------------------------------------*/
-.site-header {
-  background-color: crimson;
-  color: #fff; }
-
 .site-branding {
   width: 50%;
   height: 90px;
@@ -746,9 +742,6 @@ header nav ul li a {
 /*--------------------------------------------------------------
 ## Footer layout
 --------------------------------------------------------------*/
-.site-footer {
-  background-color: #e6e6e6; }
-
 .sponsors {
   text-align: center;
   align-content: center; }
