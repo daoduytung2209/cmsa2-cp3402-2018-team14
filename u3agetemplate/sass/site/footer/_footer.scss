@@ -1,16 +1,38 @@
-.site-footer{
-  background-color: white;
+.site-footer {
+  background-color: #e6e6e6;
 }
 
-.sponsors{
+.sponsors {
   text-align: center;
   align-content: center;
 }
 
-.site-info{
+.site-info {
   text-align: center;
 }
 
+.site-map {
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#Cota-img, #LifeTec-img, #JCU-img {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+
+.container-1, .container-2, .container-3 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
 
 .button-top {
   position: fixed; /* Fixed/sticky position */
@@ -30,7 +52,7 @@
   transition: opacity .18s ease;
 }
 
-.button-top-visible{
+.button-top-visible {
   opacity: 1;
   pointer-events: auto;
 }

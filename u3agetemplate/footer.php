@@ -14,7 +14,30 @@
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer">
-    <div class="sponsors">
+
+    <section class="site-map">
+        <!--this area contains the containers for holding site map info-->
+        <div class="container-1">
+            <?php
+            printf(esc_html__('Site maps 1 for here'));
+            ?>
+        </div>
+
+        <div class="container-2">
+            <?php
+            printf(esc_html__('Site maps 2 for here'));
+            ?>
+        </div>
+
+        <div class="container-3">
+            <?php
+            printf(esc_html__('Site maps 3 for here'));
+            ?>
+        </div>
+    </section>
+
+    <!--this area contains the container for holding the sponsors-->
+    <section class="sponsors">
         <?php
         printf(esc_html__('Sponsors of U3A'));
         ?>
@@ -25,7 +48,9 @@
             echo '<a href=\"footer.php" id="JCU-img" title="JCU" alt="JCU"><img src="https://www.jcu.edu.au/__data/assets/image/0013/4441/jcua-logo.png"></a>';
             ?>
         </div>
-    </div>
+    </section>
+
+    <!--this area contains the container for holding the site copyright and location-->
     <div class="site-info">
         <?php
         /* translators: %s: CMS name, i.e. WordPress. */
