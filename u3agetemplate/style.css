@@ -71,7 +71,7 @@ body {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.2em 0; }
 
 /* Grouping content
 	 ========================================================================== */
@@ -449,7 +449,7 @@ img {
   /* Adhere to container width. */ }
 
 figure {
-  margin: 1em 0;
+  margin: 0;
   /* Extra wide images within figure tags don't overflow the content area. */ }
 
 table {
@@ -537,7 +537,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: black; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -709,14 +709,36 @@ site-content {
 /*--------------------------------------------------------------
 ## Header layout
 --------------------------------------------------------------*/
+.header-image {
+  max-height: 60vh;
+  overflow: hidden; }
+  .header-image img {
+    display: block;
+    width: 100vw; }
+
 .site-header {
-  background-color: crimson;
+  background-color: #348080;
   color: #fff; }
 
 .site-branding {
   width: 50%;
-  height: 90px;
-  float: left; }
+  height: 100px;
+  float: left;
+  display: flex;
+  padding-left: 2em;
+  flex: 1 0 auto; }
+
+.custom-logo-link {
+  margin-right: 1em; }
+  .custom-logo-link img {
+    display: block;
+    height: 65pc;
+    width: auto; }
+
+.site-branding-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .login-sign-up {
   width: calc(50% - 10px);
@@ -726,9 +748,8 @@ site-content {
   text-align: right; }
 
 header nav {
-  background-color: black;
-  line-height: 50px;
-  border-bottom: 1px solid #404040; }
+  background-color: #333;
+  line-height: 50px; }
 
 header p.site-description {
   margin: 0; }
@@ -742,6 +763,9 @@ header nav ul li {
 
 header nav ul li a {
   color: white; }
+
+li a:hover {
+  background-color: #666666; }
 
 /*--------------------------------------------------------------
 ## Footer layout
