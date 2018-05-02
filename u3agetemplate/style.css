@@ -722,17 +722,17 @@ site-content {
 
 .site-branding {
   width: 50%;
-  height: 90px;
+  height: 100px;
   float: left;
   display: flex;
   padding-left: 2em;
   flex: 1 0 auto; }
 
-custom-logo-link {
+.custom-logo-link {
   margin-right: 1em; }
-  custom-logo-link img {
+  .custom-logo-link img {
     display: block;
-    height: 65px;
+    height: 65pc;
     width: auto; }
 
 .site-branding-text {
