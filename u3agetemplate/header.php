@@ -24,10 +24,23 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'u3agetemplate' ); ?></a>
 
+    <?php if ( get_header_image() && is_front_page() ) : ?>
+    <figure class="header-image">
+        <div id="site-header">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <img src="<?php header_image(); ?>" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+            </a>
+        </div>
+    </figure>
+    <?php endif; ?> <!-- End Header Image -->
+
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
+
+            <?php the_custom_logo();?>
+
+			<div class="site-branding-text">
+            <?php
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -42,6 +55,7 @@
 				?>
 				<p class="site-description"><?php echo $u3agetemplate_description; /* WPCS: xss ok. */ ?></p>
 			<?php endif; ?>
+        </div>
 		</div><!-- .site-branding -->
 
         <div class="login-sign-up">

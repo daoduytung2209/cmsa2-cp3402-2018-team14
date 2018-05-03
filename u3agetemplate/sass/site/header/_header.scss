@@ -1,4 +1,16 @@
+.header-image{
+  max-height: 40vh;
+  overflow: hidden;
+
+  img{
+    display: block;
+    width: 100vw;
+  }
+}
+
 .site-header {
+  background-color: #1d7874 ;
+  //#21759b
   @media screen and (min-width: $query__small) {
 
   }
@@ -6,8 +18,52 @@
 
 .site-branding {
   width: 50%;
-  height: 90px;
+  height: 100px;
   float: left;
+  padding: 1em;
+  display: flex;
+}
+
+.custom-logo{
+  margin-right: 1em;
+
+  img{
+    display: block;
+    height: 65px;
+    width: auto;
+  }
+}
+
+.site-branding-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px;
+}
+
+.site-title{
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1em;
+
+  a{
+    color: white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+      text-decoration: underline;
+    }
+  }
+}
+
+.site-description{
+  margin: 0;
+  font-size: 0.9em;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .login-sign-up {
@@ -18,8 +74,21 @@
   text-align: right;
 }
 
+/*
+* NAVIGATION/MENU
+*/
+
+.main-navigation{
+
+  li{
+    padding: 0;
+  }
+
+
+}
+
 header nav {
-  background-color: black;
+  background-color: #071e22;
   line-height: 50px;
   border-bottom: 1px solid #404040;
 }
@@ -39,4 +108,8 @@ header nav ul li {
 
 header nav ul li a {
   color: white;
+}
+
+li a:hover {
+  background-color: #679289;
 }
