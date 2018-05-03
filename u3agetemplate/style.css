@@ -71,7 +71,7 @@ body {
  */
 h1 {
   font-size: 2em;
-  margin: 0.2em 0; }
+  margin: 0.67em 0; }
 
 /* Grouping content
 	 ========================================================================== */
@@ -449,7 +449,7 @@ img {
   /* Adhere to container width. */ }
 
 figure {
-  margin: 0;
+  margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */ }
 
 table {
@@ -537,7 +537,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: black; }
+  color: royalblue; }
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
@@ -709,63 +709,39 @@ site-content {
 /*--------------------------------------------------------------
 ## Header layout
 --------------------------------------------------------------*/
-.header-image {
-  max-height: 60vh;
-  overflow: hidden; }
-  .header-image img {
-    display: block;
-    width: 100vw; }
-
-.site-header {
-  background-color: #348080;
-  color: #fff; }
-
 .site-branding {
   width: 50%;
-  height: 100px;
-  float: left;
-  display: flex;
-  padding-left: 2em;
-  flex: 1 0 auto; }
+  height: 90px;
+  float: left; }
 
-.custom-logo-link {
-  margin-right: 1em; }
-  .custom-logo-link img {
-    display: block;
-    height: 65pc;
-    width: auto; }
+.login-sign-up {
+  width: calc(50% - 10px);
+  line-height: 90px;
+  float: right;
+  margin-right: 10px;
+  text-align: right; }
 
-.site-branding-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .site-branding-text .login-sign-up {
-    width: calc(50% - 10px);
-    line-height: 90px;
-    float: right;
-    margin-right: 10px;
-    text-align: right; }
-  .site-branding-text header nav {
-    background-color: #333;
-    line-height: 50px; }
-  .site-branding-text header p.site-description {
-    margin: 0; }
-  .site-branding-text header nav ul {
-    width: 100%; }
-  .site-branding-text header nav ul li {
-    width: 25%;
-    text-align: center; }
-  .site-branding-text header nav ul li a {
-    color: white; }
-  .site-branding-text li a:hover {
-    background-color: #666666; }
+header nav {
+  background-color: black;
+  line-height: 50px;
+  border-bottom: 1px solid #404040; }
+
+header p.site-description {
+  margin: 0; }
+
+header nav ul {
+  width: 100%; }
+
+header nav ul li {
+  width: 25%;
+  text-align: center; }
+
+header nav ul li a {
+  color: white; }
 
 /*--------------------------------------------------------------
 ## Footer layout
 --------------------------------------------------------------*/
-.site-footer {
-  background-color: #e6e6e6; }
-
 .sponsors {
   text-align: center;
   align-content: center; }
@@ -786,7 +762,7 @@ site-content {
   height: 300px;
   text-align: center; }
 
-.container-1, .container-2, .container-3 {
+.container-1 .container-2 .container-3 {
   float: left;
   width: 33.33%;
   padding: 10px;

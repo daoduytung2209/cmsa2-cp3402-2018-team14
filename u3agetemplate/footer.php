@@ -15,26 +15,28 @@
 
 <footer id="colophon" class="site-footer">
 
+    <!--this area contains the containers for holding site map info-->
+    <!--
     <section class="site-map">
-        <!--this area contains the containers for holding site map info-->
         <div class="container-1">
             <?php
-            printf(esc_html__('Site maps 1 for here'));
+            //printf(esc_html__('Site maps 1 for here'));
             ?>
         </div>
 
         <div class="container-2">
             <?php
-            printf(esc_html__('Site maps 2 for here'));
+            //printf(esc_html__('Site maps 2 for here'));
             ?>
         </div>
 
         <div class="container-3">
             <?php
-            printf(esc_html__('Site maps 3 for here'));
+            //printf(esc_html__('Site maps 3 for here'));
             ?>
         </div>
     </section>
+    -->
 
     <!--this area contains the container for holding the sponsors-->
     <section class="sponsors">

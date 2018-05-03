@@ -20,6 +20,7 @@
         });
     });
 
+
     // Header text color.
     wp.customize('header_textcolor', function (value) {
         value.bind(function (to) {
@@ -49,5 +50,9 @@
             });
         });
     });
+
+
+    //Footer copyright text
+
 
 })(jQuery);

@@ -1,17 +1,4 @@
-.header-image {
-  max-height: 60vh;
-  overflow: hidden;
-
-  img {
-    display: block;
-    width: 100vw;
-  }
-}
-
 .site-header {
-  background-color: #348080;
-  color: #fff;
-
   @media screen and (min-width: $query__small) {
 
   }
@@ -19,60 +6,37 @@
 
 .site-branding {
   width: 50%;
-  height: 100px;
+  height: 90px;
   float: left;
-  display: flex;
-  padding-left: 2em;
-  flex: 1 0 auto;
 }
 
-.custom-logo-link{
-  margin-right: 1em;
-
-  img{
-    display: block;
-    height: 65pc;
-    width: auto;
-  }
+.login-sign-up {
+  width: calc(50% - 10px);
+  line-height: 90px;
+  float: right;
+  margin-right: 10px;
+  text-align: right;
 }
 
-.site-branding-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  //height: 65px;
+header nav {
+  background-color: black;
+  line-height: 50px;
+  border-bottom: 1px solid #404040;
+}
 
-  .login-sign-up {
-    width: calc(50% - 10px);
-    line-height: 90px;
-    float: right;
-    margin-right: 10px;
-    text-align: right;
-  }
+header p.site-description {
+  margin: 0;
+}
 
-  header nav {
-    background-color: #333;
-    line-height: 50px;
-  }
+header nav ul {
+  width: 100%;
+}
 
-  header p.site-description {
-    margin: 0;
-  }
+header nav ul li {
+  width: 25%;
+  text-align: center;
+}
 
-  header nav ul {
-    width: 100%;
-  }
-
-  header nav ul li {
-    width: 25%;
-    text-align: center;
-  }
-
-  header nav ul li a {
-    color: white;
-  }
-
-  li a:hover {
-    background-color: #666666;
-  }
+header nav ul li a {
+  color: white;
 }
