@@ -14,7 +14,13 @@
 
 get_header();
 ?>
-
+    <div id="landing-area">
+        <div id="center-container">
+            <p class="landing-text">
+                Welcome. Love learning? You're in the right place.
+            </p>
+        </div>
+    </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 

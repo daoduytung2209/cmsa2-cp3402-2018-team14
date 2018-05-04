@@ -885,6 +885,29 @@ li a:hover {
   display: block; }
 
 /*--------------------------------------------------------------
+## Landing
+--------------------------------------------------------------*/
+#landing-area {
+  height: 75vh;
+  background-image: url(https://media.gettyimages.com/photos/talk-picture-id528476282);
+  background-attachment: fixed;
+  background-size: 100%; }
+
+#landing-area #center-container {
+  width: 20%;
+  height: 10%;
+  margin: auto;
+  position: relative;
+  top: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: auto; }
+
+.landing-text {
+  margin: 0;
+  text-align: center;
+  color: white; }
+
+/*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
