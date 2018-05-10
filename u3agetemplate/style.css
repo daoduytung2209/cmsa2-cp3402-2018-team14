@@ -716,9 +716,6 @@ site-content {
     display: block;
     width: 100vw; }
 
-.site-header {
-  background-color: #1d7874; }
-
 .site-branding {
   width: 50%;
   height: 100px;
@@ -788,9 +785,6 @@ header nav ul li {
 header nav ul li a {
   color: white; }
 
-li a:hover {
-  background-color: #679289; }
-
 /*--------------------------------------------------------------
 ## Footer layout
 --------------------------------------------------------------*/
@@ -834,7 +828,7 @@ li a:hover {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: blue;
+  background-color: red;
   /* Set a background color */
   color: white;
   /* Text color */

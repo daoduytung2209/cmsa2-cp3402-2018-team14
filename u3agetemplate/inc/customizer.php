@@ -39,18 +39,53 @@ function u3agetemplate_customize_register($wp_customize)
     ));
 
     //control, for header and footer background color
-
     $wp_customize->add_control(
         new WP_Customize_Color_Control(
             $wp_customize,
             'theme_bg_color', array(
-                'label' => __('Header and footer background color', 'u3agetemplate'),
+                'label' => __('Header and Footer background color', 'u3agetemplate'),
                 'section' => 'colors',
                 'settings' => 'theme_bg_color'
             )
         )
     );
 
+    //footer options customiser tab
+    $wp_customize->add_section('footer_options',
+        array(
+            'title' => __('Footer Options', 'u3agetemplate'),
+            'priority' => 95,
+            'capability' => 'edit_theme_options'
+
+        ));
+
+    //adding setting for footer text area
+    $wp_customize->add_setting('footer_copyright_text', array(
+        'default' => 'Default Text For Footer Section',
+    ));
+
+    $wp_customize->add_control('footer_copyright_text', array(
+        'label' => 'Footer Text Here',
+        'section' => 'footer_options',
+        'type' => 'textarea',
+    ));
+
+    //footer option to hide sponsors
+    $wp_customize->add_setting('hide_sponsor_button', array(
+        'default' => false,
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control('hide_sponsor_button', array(
+        'label' => 'Button Display',
+        'section' => 'footer_options',
+        'settings' => 'hide_sponsor_button',
+        'type' => 'radio',
+        'choices' => array(
+            'show' => 'Show Sponsors',
+            'hide' => 'Hide Sponsors',
+        ),
+    ));
 
 }
 
@@ -87,6 +122,18 @@ function u3agetemplate_customize_preview_js()
 add_action('customize_preview_init', 'u3agetemplate_customize_preview_js');
 
 
+/*
+if (!function_exists('u3agetemplate_site_copyright')) :
+    function u3agetemplate_site_copyright()
+    {
+        $current_footer_text =
+        $footer_copyright_text = get_theme_mod('footer_copyright_text');
+
+        if ()
+    }
+endif;
+*/
+
 if (!function_exists('u3agetemplate_header_style')) :
     /**
      * Styles the header image and text displayed on the blog.
@@ -97,16 +144,12 @@ if (!function_exists('u3agetemplate_header_style')) :
     {
         $header_text_color = get_header_textcolor();
         $header_bg_color = get_theme_mod('theme_bg_color');
-
         /*
          * If no custom options for text are set, let's bail.
          * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
          */
-
         //if (get_theme_support('custom-header', 'default-text-color') != $header_text_color) {
-
         if (HEADER_TEXTCOLOR != $header_text_color) {
-
             // If we get this far, we have custom styles. Let's do this.
             ?>
             <style type="text/css">
@@ -133,7 +176,6 @@ if (!function_exists('u3agetemplate_header_style')) :
             </style>
             <?php
         }
-
         if ('#002254' != $header_bg_color) { ?>
             <style type="text/css">
                 .site-header,

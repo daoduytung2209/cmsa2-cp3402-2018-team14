@@ -19,6 +19,11 @@
             $('.site-description').text(to);
         });
     });
+    wp.customize('footer_copyright_text', function (value) {
+        value.bind(function (to) {
+            $('.site-info').text(to);
+        });
+    });
 
 
     // Header text color.
@@ -50,9 +55,5 @@
             });
         });
     });
-
-
-    //Footer copyright text
-
 
 })(jQuery);
