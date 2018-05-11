@@ -39,6 +39,7 @@
     -->
 
     <!--this area contains the container for holding the sponsors-->
+    <?php if( get_theme_mod( 'hide_sponsor_button', 'show' ) == 'show' ) : ?>
     <section class="sponsors">
         <?php
         printf(esc_html__('Sponsors of U3A'));
@@ -51,12 +52,14 @@
             ?>
         </div>
     </section>
+    <?php endif ?>
 
     <!--this area contains the container for holding the site copyright and location-->
     <div class="site-info">
         <?php
         /* translators: %s: CMS name, i.e. WordPress. */
-        printf(esc_html__('All rights reserved U3A %1$s Inc. © %2$s'), 'Townsville', "2018");
+        /*<a href="" class='button'><?php echo get_theme_mod( 'footer_copyright_text') ?></a href="">*/
+        printf(get_theme_mod( 'footer_copyright_text'));
         ?>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
