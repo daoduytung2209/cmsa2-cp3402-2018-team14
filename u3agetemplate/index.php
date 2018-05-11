@@ -15,7 +15,8 @@
 get_header();
 ?>
     <div id="landing-area">
-        <div id="center-container">
+        <div id="center-container" class="logged-in">
+            <h2 class="landing-heading">WANNA LEARN MOTHERFUCKER?</h2>
             <p class="landing-text">
                 Welcome. Love learning? You're in the right place.
             </p>
