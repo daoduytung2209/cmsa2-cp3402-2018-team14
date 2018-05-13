@@ -717,8 +717,10 @@ a {
 /*--------------------------------------------------------------
 ## Global layout
 --------------------------------------------------------------*/
-site-content {
-  position: relative;
+.site-content {
+  position: relative; }
+
+.content-area {
   padding: 1em; }
 
 /*--------------------------------------------------------------
@@ -799,6 +801,11 @@ site-content {
 */
 .main-navigation li {
   padding: 0; }
+.main-navigation a {
+  color: white;
+  text-decoration: none; }
+  .main-navigation a:hover, .main-navigation a:focus {
+    text-decoration: underline; }
 
 header nav {
   background-color: #071e22;
