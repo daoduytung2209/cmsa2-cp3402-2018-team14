@@ -58,10 +58,15 @@
         </div>
 		</div><!-- .site-branding -->
 
-        <div class="login-sign-up">
-            <a>Login</a><span> / </span>
-            <a>Sign up</a>
-        </div>
+        <div id="login-signup-navigation" class="login-sign-up">
+            <button class="menu-toggle" aria-controls="secondary-menu" aria-expanded="false"><?php esc_html_e( 'Secondary Menu', 'u3agetemplate' ); ?></button>
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'menu-2',
+                'menu_id'        => 'secondary-menu',
+            ) );
+            ?>
+        </div><!-- #login-signup-navigation -->
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'u3agetemplate' ); ?></button>

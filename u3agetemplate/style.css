@@ -557,13 +557,13 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .sub-menu {
-  background-color: blue; }
+  background-color: #21759b; }
 
 .sub-menu li {
-  width: 100% !important; }
+  width: 100%; }
 
 .sub-menu li a {
-  width: 100% !important; }
+  width: 100%; }
 
 .main-navigation {
   clear: both;
@@ -770,11 +770,29 @@ site-content {
   font-weight: 100; }
 
 .login-sign-up {
-  width: calc(50% - 10px);
-  line-height: 90px;
+  width: 30%;
   float: right;
   margin-right: 10px;
-  text-align: right; }
+  text-align: right;
+  display: flex;
+  padding: 2em;
+  font-size: 1em;
+  justify-content: center; }
+  .login-sign-up ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #071e22; }
+  .login-sign-up li {
+    float: left; }
+  .login-sign-up li a {
+    display: block;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none; }
+    .login-sign-up li a:hover, .login-sign-up li a:focus {
+      text-decoration: underline; }
 
 /*
 * NAVIGATION/MENU
