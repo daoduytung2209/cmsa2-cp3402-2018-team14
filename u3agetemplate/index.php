@@ -15,9 +15,10 @@
 get_header();
 ?>
     <div id="landing-area">
-        <div id="center-container">
+        <div id="center-container" class="logged-in">
+            <h2 class="landing-heading">Our Goal</h2>
             <p class="landing-text">
-                Welcome. Love learning? You're in the right place.
+                The University of the Third Age (U3A) aims to help people who seek the fun of learning to connect with institutions and people who provide study resources and education materials.
             </p>
         </div>
     </div>

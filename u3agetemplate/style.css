@@ -361,6 +361,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h2.landing-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-color: white; }
+
 p {
   margin-bottom: 1.5em; }
 
@@ -550,6 +556,15 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+.sub-menu {
+  background-color: #21759b; }
+
+.sub-menu li {
+  width: 100%; }
+
+.sub-menu li a {
+  width: 100%; }
+
 .main-navigation {
   clear: both;
   display: block;
@@ -702,8 +717,10 @@ a {
 /*--------------------------------------------------------------
 ## Global layout
 --------------------------------------------------------------*/
-site-content {
-  position: relative;
+.site-content {
+  position: relative; }
+
+.content-area {
   padding: 1em; }
 
 /*--------------------------------------------------------------
@@ -755,17 +772,40 @@ site-content {
   font-weight: 100; }
 
 .login-sign-up {
-  width: calc(50% - 10px);
-  line-height: 90px;
+  width: 30%;
   float: right;
   margin-right: 10px;
-  text-align: right; }
+  text-align: right;
+  display: flex;
+  padding: 2em;
+  font-size: 1em;
+  justify-content: center; }
+  .login-sign-up ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #071e22; }
+  .login-sign-up li {
+    float: left; }
+  .login-sign-up li a {
+    display: block;
+    color: white;
+    padding: 0.5em;
+    text-decoration: none; }
+    .login-sign-up li a:hover, .login-sign-up li a:focus {
+      text-decoration: underline; }
 
 /*
 * NAVIGATION/MENU
 */
 .main-navigation li {
   padding: 0; }
+.main-navigation a {
+  color: white;
+  text-decoration: none; }
+  .main-navigation a:hover, .main-navigation a:focus {
+    text-decoration: underline; }
 
 header nav {
   background-color: #071e22;
@@ -874,8 +914,8 @@ header nav ul li a {
   background-size: 100%; }
 
 #landing-area #center-container {
-  width: 20%;
-  height: 10%;
+  width: 50%;
+  min-height: 10%;
   margin: auto;
   position: relative;
   top: 30%;

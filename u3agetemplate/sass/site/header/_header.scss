@@ -1,8 +1,8 @@
-.header-image{
+.header-image {
   max-height: 40vh;
   overflow: hidden;
 
-  img{
+  img {
     display: block;
     width: 100vw;
   }
@@ -23,67 +23,113 @@
   display: flex;
 }
 
-.custom-logo{
+.custom-logo {
   margin-right: 1em;
 
-  img{
+  img {
     display: block;
     height: 65px;
     width: auto;
   }
 }
 
-.site-branding-text{
+.site-branding-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 65px;
 }
 
-.site-title{
+.site-title {
   margin: 0;
   padding: 0;
   font-size: 1.6em;
   font-weight: 900;
   line-height: 1em;
 
-  a{
+  a {
     color: white;
     text-decoration: none;
 
     &:hover,
-    &:focus{
+    &:focus {
       text-decoration: underline;
     }
   }
 }
 
-.site-description{
+.site-description {
   margin: 0;
   font-size: 0.9em;
   font-style: italic;
   font-weight: 100;
 }
 
+//.login-sign-up {
+//  width: calc(50% - 10px);
+//  line-height: 90px;
+//  float: right;
+//  margin-right: 10px;
+//  text-align: right;
+//}
+
 .login-sign-up {
-  width: calc(50% - 10px);
-  line-height: 90px;
+  //width: 50px;
+  //line-height: 90px;
+  width: 30%;
   float: right;
   margin-right: 10px;
   text-align: right;
+  display: flex;
+  padding: 2em;
+  font-size: 1em;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #071e22;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    //text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 /*
 * NAVIGATION/MENU
 */
 
-.main-navigation{
+.main-navigation {
 
-  li{
+  li {
     padding: 0;
   }
 
+  a {
+    color: white;
+    text-decoration: none;
 
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 header nav {
@@ -107,8 +153,4 @@ header nav ul li {
 
 header nav ul li a {
   color: white;
-}
-
-li a:hover {
-  //background-color: #679289;
 }
