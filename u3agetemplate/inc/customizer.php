@@ -59,6 +59,17 @@ function u3agetemplate_customize_register($wp_customize)
 
         ));
 
+    //adding setting for footer link text area
+    $wp_customize->add_setting('footer_link_text', array(
+        'default' => 'Default Text For Footer Section',
+    ));
+
+    $wp_customize->add_control('footer_link_text', array(
+        'label' => 'Footer Text Here',
+        'section' => 'footer_options',
+        'type' => 'textarea',
+    ));
+
     //adding setting for footer text area
     $wp_customize->add_setting('footer_copyright_text', array(
         'default' => 'Default Text For Footer Section',
@@ -70,16 +81,16 @@ function u3agetemplate_customize_register($wp_customize)
         'type' => 'textarea',
     ));
 
-    //footer option to hide sponsors
-    $wp_customize->add_setting('hide_sponsor_button', array(
+    //footer option to hide scroll button
+    $wp_customize->add_setting('hide_scroll_button', array(
         'default' => false,
         'transport' => 'refresh',
     ));
 
-    $wp_customize->add_control('hide_sponsor_button', array(
+    $wp_customize->add_control('hide_scroll_button', array(
         'label' => 'Button Display',
         'section' => 'footer_options',
-        'settings' => 'hide_sponsor_button',
+        'settings' => 'hide_scroll_button',
         'type' => 'radio',
         'choices' => array(
             'show' => 'Show Sponsors',
