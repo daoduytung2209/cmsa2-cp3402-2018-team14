@@ -17,7 +17,7 @@
     <!--this area contains the container for holding the site copyright and location as well as a link to the sponsors-->
 
     <div class="site-sponsors">
-        <a href="" class='button'><?php echo get_theme_mod( 'footer_link_text') ?></a href="">
+        <a href="<?php echo get_theme_mod( 'footer_url_id') ?>" class='URL-button'> <h1><?php echo get_theme_mod( 'footer_link_text') ?></h1></a href="">
     </div>
 
     <div class="site-info">
