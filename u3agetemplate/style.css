@@ -776,6 +776,30 @@ a {
   font-weight: 100; }
 
 /*
+Header Menus
+*/
+/*
+* NAVIGATION/MENU
+*/
+.main-navigation {
+  background-color: #071e22;
+  line-height: 50px;
+  border-bottom: 1px solid #404040; }
+  .main-navigation li {
+    padding: 0; }
+  .main-navigation ul {
+    width: 100%; }
+  .main-navigation a {
+    color: white;
+    text-decoration: none; }
+    .main-navigation a:hover, .main-navigation a:focus {
+      text-decoration: underline; }
+
+header nav ul li {
+  width: 25%;
+  text-align: center; }
+
+/*
 * SECONDARY NAVIGATION/MENU (Login/Sign up)
 */
 .login-sign-up {
@@ -801,27 +825,6 @@ a {
     text-decoration: none; }
     .login-sign-up li a:hover, .login-sign-up li a:focus {
       text-decoration: underline; }
-
-/*
-* NAVIGATION/MENU
-*/
-.main-navigation {
-  background-color: #071e22;
-  line-height: 50px;
-  border-bottom: 1px solid #404040; }
-  .main-navigation li {
-    padding: 0; }
-  .main-navigation ul {
-    width: 100%; }
-  .main-navigation a {
-    color: white;
-    text-decoration: none; }
-    .main-navigation a:hover, .main-navigation a:focus {
-      text-decoration: underline; }
-
-header nav ul li {
-  width: 25%;
-  text-align: center; }
 
 /*--------------------------------------------------------------
 ## Footer layout
