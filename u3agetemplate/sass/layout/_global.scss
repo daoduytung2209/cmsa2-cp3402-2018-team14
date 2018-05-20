@@ -1,4 +1,18 @@
-.site-content {
+@media screen and (max-width: 1200px) {
+  .one_third {
+    width: calc(50% - 50px);
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .one_third {
+    width: calc(100% - 50px);
+    margin-bottom: 10px;
+  }
+}
+
+  .site-content {
   position: relative;
 }
 
@@ -8,4 +22,22 @@
 
 .widget-area{
   padding-left: 4em;
+  padding: 0;
 }
+.one_third {
+  width: calc(33% - 100px);
+  margin: 0 50px;
+  min-height: 200px;
+  border-radius: 5px;
+}
+.wd-row, .n2-ss-slider-1, .one_third {
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.35);
+}
+#account-invoices {
+  display: none;
+}
+#account-activity {
+  display: none;
+}
+
+

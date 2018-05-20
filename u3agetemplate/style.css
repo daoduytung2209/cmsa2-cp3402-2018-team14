@@ -361,6 +361,9 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  font-weight: 100; }
+
 h2.landing-heading {
   margin: 0;
   padding: 0;
@@ -370,6 +373,9 @@ h2.landing-heading {
 
 p {
   margin-bottom: 1.5em; }
+
+.widget-area p {
+  text-align: center; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -428,6 +434,9 @@ hr {
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
+
+aside {
+  padding: 1em; }
 
 ul, ol {
   margin: 0 0 1.5em 3em; }
@@ -557,6 +566,10 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+@media screen and (max-width: 300px) {
+  .main-navigation li {
+    display: block;
+    width: 100%; } }
 .sub-menu {
   background-color: #21759b; }
 
@@ -566,11 +579,17 @@ a {
 .sub-menu li a {
   width: 100%; }
 
+.sub-menu {
+  background-color: #005896; }
+
 .main-navigation {
   clear: both;
   display: block;
   float: left;
-  width: 100%; }
+  width: 100%;
+  background-color: #005896;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.35);
+  border: none; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -718,6 +737,15 @@ a {
 /*--------------------------------------------------------------
 ## Global layout
 --------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .one_third {
+    width: calc(50% - 50px);
+    margin: 0 25px;
+    margin-bottom: 20px; } }
+@media screen and (max-width: 480px) {
+  .one_third {
+    width: calc(100% - 50px);
+    margin-bottom: 10px; } }
 .site-content {
   position: relative; }
 
@@ -725,11 +753,33 @@ a {
   padding-left: 4em; }
 
 .widget-area {
-  padding-left: 4em; }
+  padding-left: 4em;
+  padding: 0; }
+
+.one_third {
+  width: calc(33% - 100px);
+  margin: 0 50px;
+  min-height: 200px;
+  border-radius: 5px; }
+
+.wd-row, .n2-ss-slider-1, .one_third {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35); }
+
+#account-invoices {
+  display: none; }
+
+#account-activity {
+  display: none; }
 
 /*--------------------------------------------------------------
 ## Header layout
 --------------------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  .site-branding-text {
+    display: none; } }
+.entry-header {
+  display: none; }
+
 .header-image {
   max-height: 40vh;
   overflow: hidden; }
