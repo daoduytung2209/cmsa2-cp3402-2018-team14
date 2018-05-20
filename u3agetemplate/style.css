@@ -764,7 +764,7 @@ a {
   font-weight: 900;
   line-height: 1em; }
   .site-title a {
-    color: white;
+    color: #fff;
     text-decoration: none; }
     .site-title a:hover, .site-title a:focus {
       text-decoration: underline; }
@@ -828,10 +828,15 @@ header nav ul li {
 --------------------------------------------------------------*/
 .site-sponsors {
   text-align: center;
-  padding: 1%; }
+  padding-top: 1%; }
+
+.URL-button {
+  color: #fff; }
 
 .site-info {
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+  padding-bottom: 1%; }
 
 #Cota-img, #LifeTec-img, #JCU-img {
   float: left;
@@ -853,9 +858,9 @@ header nav ul li {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: red;
+  background-color: #f44242;
   /* Set a background color */
-  color: white;
+  color: #fff;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
