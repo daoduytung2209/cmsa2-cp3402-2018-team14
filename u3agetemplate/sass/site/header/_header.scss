@@ -48,7 +48,7 @@
   line-height: 1em;
 
   a {
-    color: white;
+    color: $page_text_color;
     text-decoration: none;
 
     &:hover,
@@ -65,20 +65,13 @@
   font-weight: 100;
 }
 
-//.login-sign-up {
-//  width: calc(50% - 10px);
-//  line-height: 90px;
-//  float: right;
-//  margin-right: 10px;
-//  text-align: right;
-//}
+/*
+* SECONDARY NAVIGATION/MENU (Login/Sign up)
+*/
 
 .login-sign-up {
-  //width: 50px;
-  //line-height: 90px;
-  width: 30%;
+  width: 25%;
   float: right;
-  margin-right: 10px;
   text-align: right;
   display: flex;
   padding: 2em;
@@ -117,8 +110,16 @@
 
 .main-navigation {
 
+  background-color: #071e22;
+  line-height: 50px;
+  border-bottom: 1px solid #404040;
+
   li {
     padding: 0;
+  }
+
+  ul {
+    width: 100%;
   }
 
   a {
@@ -132,25 +133,7 @@
   }
 }
 
-header nav {
-  background-color: #071e22;
-  line-height: 50px;
-  border-bottom: 1px solid #404040;
-}
-
-header p.site-description {
-  margin: 0;
-}
-
-header nav ul {
-  width: 100%;
-}
-
 header nav ul li {
   width: 25%;
   text-align: center;
-}
-
-header nav ul li a {
-  color: white;
 }

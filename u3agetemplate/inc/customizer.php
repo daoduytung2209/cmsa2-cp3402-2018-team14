@@ -59,6 +59,19 @@ function u3agetemplate_customize_register($wp_customize)
 
         ));
 
+
+    //adding setting for footer link text area
+    $wp_customize->add_setting('footer_link_text', array(
+        'default' => 'Default Text For Footer Section',
+    ));
+
+    $wp_customize->add_control('footer_link_text', array(
+        'label' => 'Footer Text Here',
+        'section' => 'footer_options',
+        'type' => 'textarea',
+    ));
+
+
     //adding setting for footer text area
     $wp_customize->add_setting('footer_copyright_text', array(
         'default' => 'Default Text For Footer Section',
@@ -70,22 +83,39 @@ function u3agetemplate_customize_register($wp_customize)
         'type' => 'textarea',
     ));
 
-    //footer option to hide sponsors
-    $wp_customize->add_setting('hide_sponsor_button', array(
+
+    //footer option to hide scroll button
+    $wp_customize->add_setting('hide_scroll_button', array(
         'default' => false,
         'transport' => 'refresh',
     ));
 
-    $wp_customize->add_control('hide_sponsor_button', array(
+    $wp_customize->add_control('hide_scroll_button', array(
         'label' => 'Button Display',
         'section' => 'footer_options',
-        'settings' => 'hide_sponsor_button',
+        'settings' => 'hide_scroll_button',
         'type' => 'radio',
         'choices' => array(
             'show' => 'Show Sponsors',
             'hide' => 'Hide Sponsors',
         ),
     ));
+
+    //footer custom url text
+    $wp_customize->add_setting( 'footer_url_id', array(
+        'capability' => 'edit_theme_options',
+        'sanitize_callback' => 'footer_sanitize_url',
+    ) );
+
+    $wp_customize->add_control( 'footer_url_id', array(
+        'type' => 'url',
+        'section' => 'footer_options', // Add a default or your own section
+        'label' => __( 'Custom Footer URL' ),
+        'description' => __( 'Enter a custom URL input' ),
+        'input_attrs' => array(
+            'placeholder' => __( 'http://www.google.com' ),
+        ),
+    ) );
 
 }
 
@@ -121,18 +151,6 @@ function u3agetemplate_customize_preview_js()
 
 add_action('customize_preview_init', 'u3agetemplate_customize_preview_js');
 
-
-/*
-if (!function_exists('u3agetemplate_site_copyright')) :
-    function u3agetemplate_site_copyright()
-    {
-        $current_footer_text =
-        $footer_copyright_text = get_theme_mod('footer_copyright_text');
-
-        if ()
-    }
-endif;
-*/
 
 if (!function_exists('u3agetemplate_header_style')) :
     /**
@@ -187,3 +205,7 @@ if (!function_exists('u3agetemplate_header_style')) :
         }
     }
 endif;
+
+function footer_sanitize_url( $url ) {
+    return esc_url_raw( $url );
+}

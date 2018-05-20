@@ -1,28 +1,19 @@
-.sponsors {
+.site-sponsors {
   text-align: center;
-  align-content: center;
+  padding-top: 1%;
+}
+
+.URL-button{
+  color: $page_text_color;
 }
 
 .site-info {
   text-align: center;
-}
-
-.site-map {
-  width: 100%;
-  content: "";
-  display: table;
-  clear: both;
+  color: $page_text_color;
+  padding-bottom: 1%;
 }
 
 #Cota-img, #LifeTec-img, #JCU-img {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-  text-align: center;
-}
-
-.container-1 .container-2 .container-3 {
   float: left;
   width: 33.33%;
   padding: 10px;
@@ -37,8 +28,8 @@
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
+  background-color: $top_button_color; /* Set a background color */
+  color: $top_button_text_color; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
