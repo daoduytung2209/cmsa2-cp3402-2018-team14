@@ -780,9 +780,6 @@ a {
 @media screen and (max-width: 1200px) {
   .site-branding-text {
     display: none; } }
-.entry-header {
-  display: none; }
-
 .header-image {
   max-height: 40vh;
   overflow: hidden; }
