@@ -820,7 +820,7 @@ a {
       text-decoration: underline; }
 
 .site-description {
-  color: #2aff18;
+  color: #2aff18 !important;
   margin: 0;
   font-size: 0.9em;
   font-style: italic;
@@ -841,7 +841,7 @@ Header Menus
   .main-navigation ul {
     width: 100%; }
   .main-navigation a {
-    color: white;
+    color: #2aff18;
     text-decoration: none; }
     .main-navigation a:hover, .main-navigation a:focus {
       text-decoration: underline; }
