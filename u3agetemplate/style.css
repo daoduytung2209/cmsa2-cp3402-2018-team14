@@ -841,7 +841,7 @@ Header Menus
   .main-navigation ul {
     width: 100%; }
   .main-navigation a {
-    color: #2aff18;
+    color: #2aff18 !important;
     text-decoration: none; }
     .main-navigation a:hover, .main-navigation a:focus {
       text-decoration: underline; }
