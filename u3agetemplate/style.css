@@ -814,7 +814,7 @@ a {
   font-weight: 900;
   line-height: 1em; }
   .site-title a {
-    color: #2aff18;
+    color: #2aff18 !important;
     text-decoration: none; }
     .site-title a:hover, .site-title a:focus {
       text-decoration: underline; }

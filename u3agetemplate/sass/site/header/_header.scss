@@ -53,7 +53,7 @@
   line-height: 1em;
 
   a {
-    color: $page_text_color;
+    color: $page_text_color !important;
     text-decoration: none;
 
     &:hover,
@@ -64,7 +64,7 @@
 }
 
 .site-description {
-  color: $page_text_color;
+  color: $page_text_color !important;
   margin: 0;
   font-size: 0.9em;
   font-style: italic;
