@@ -814,13 +814,13 @@ a {
   font-weight: 900;
   line-height: 1em; }
   .site-title a {
-    color: #2aff18 !important;
+    color: #fff !important;
     text-decoration: none; }
     .site-title a:hover, .site-title a:focus {
       text-decoration: underline; }
 
 .site-description {
-  color: #2aff18 !important;
+  color: #fff !important;
   margin: 0;
   font-size: 0.9em;
   font-style: italic;
@@ -841,7 +841,7 @@ Header Menus
   .main-navigation ul {
     width: 100%; }
   .main-navigation a {
-    color: #2aff18 !important;
+    color: #fff !important;
     text-decoration: none; }
     .main-navigation a:hover, .main-navigation a:focus {
       text-decoration: underline; }
@@ -885,11 +885,11 @@ header nav ul li {
   padding-top: 1%; }
 
 .URL-button {
-  color: #2aff18; }
+  color: #fff; }
 
 .site-info {
   text-align: center;
-  color: #2aff18;
+  color: #fff;
   padding-bottom: 1%; }
 
 #Cota-img, #LifeTec-img, #JCU-img {
