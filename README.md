@@ -94,3 +94,17 @@ Step by step guide on workflow for project
       <li>WP pusher plugin add to the wordpress</li>
       <p>Download from https://wppusher.com/ Add through wp-admin as an uploaded plugin</p>
 </ol>
+
+<h1> Wordpress</h1>
+<h2>Plugins</h2>
+<ol>
+      <li>Wp pusher: https://wppusher.com/</li>
+      <li>Google Maps WD: https://web-dorado.com/products/wordpress-google-maps-plugin.html</li>
+      <li>TablePress: https://tablepress.org/</li>
+      <li>Smart Slider 3: https://smartslider3.com/</li>
+      <li>iframe: https://wordpress.org/plugins/iframe/</li>
+      <li>Column Shortcodes: https://wordpress.org/plugins/column-shortcodes/</li>
+      <li>WpForms: https://wpforms.com/</li>
+      <li>Membership 2: https://wordpress.org/plugins/membership/</li>
+      <li>Widget Context: https://widgetcontext.com/</li>
+</ol>
