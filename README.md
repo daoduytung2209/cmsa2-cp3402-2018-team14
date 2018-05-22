@@ -97,7 +97,7 @@ Step by step guide on workflow for project
 
 <h1> Wordpress</h1>
 <h2>Plugins</h2>
-<ol>
+<ul>
       <li>Wp pusher: https://wppusher.com/</li>
       <li>Google Maps WD: https://web-dorado.com/products/wordpress-google-maps-plugin.html</li>
       <li>TablePress: https://tablepress.org/</li>
@@ -107,4 +107,4 @@ Step by step guide on workflow for project
       <li>WpForms: https://wpforms.com/</li>
       <li>Membership 2: https://wordpress.org/plugins/membership/</li>
       <li>Widget Context: https://widgetcontext.com/</li>
-</ol>
+</ul>
