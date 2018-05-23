@@ -96,8 +96,8 @@ function u3agetemplate_customize_register($wp_customize)
         'settings' => 'hide_scroll_button',
         'type' => 'radio',
         'choices' => array(
-            'show' => 'Show Sponsors',
-            'hide' => 'Hide Sponsors',
+            'show' => 'Show Back To Top Button',
+            'hide' => 'Hide Back To Top Button',
         ),
     ));
 
@@ -194,7 +194,7 @@ if (!function_exists('u3agetemplate_header_style')) :
             </style>
             <?php
         }
-        if ('#002254' != $header_bg_color) { ?>
+        if ('#0078a8' != $header_bg_color) { ?>
             <style type="text/css">
                 .site-header,
                 .site-footer {
