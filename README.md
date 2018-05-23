@@ -107,4 +107,5 @@ Step by step guide on workflow for project
       <li>WpForms: https://wpforms.com/</li>
       <li>Membership 2: https://wordpress.org/plugins/membership/</li>
       <li>Widget Context: https://widgetcontext.com/</li>
+      <li>All in one SEO: https://semperplugins.com/all-in-one-seo-pack-pro-version/</li>
 </ul>
