@@ -194,7 +194,7 @@ if (!function_exists('u3agetemplate_header_style')) :
             </style>
             <?php
         }
-        if ('#0078a8' != $header_bg_color) { ?>
+        if ('#002254' != $header_bg_color) { ?>
             <style type="text/css">
                 .site-header,
                 .site-footer {
