@@ -96,8 +96,8 @@ function u3agetemplate_customize_register($wp_customize)
         'settings' => 'hide_scroll_button',
         'type' => 'radio',
         'choices' => array(
-            'show' => 'Show Sponsors',
-            'hide' => 'Hide Sponsors',
+            'show' => 'Show Back To Top Button',
+            'hide' => 'Hide Back To Top Button',
         ),
     ));
 

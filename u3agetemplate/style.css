@@ -556,11 +556,11 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #4169E1; }
   a:visited {
-    color: purple; }
+    color: #800080; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #191970; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -573,9 +573,6 @@ a {
   .main-navigation li {
     display: block;
     width: 100%; } }
-.sub-menu {
-  background-color: #21759b; }
-
 .sub-menu li {
   width: 100%; }
 
@@ -814,13 +811,13 @@ a {
   font-weight: 900;
   line-height: 1em; }
   .site-title a {
-    color: #fff !important;
+    color: #fff;
     text-decoration: none; }
     .site-title a:hover, .site-title a:focus {
       text-decoration: underline; }
 
 .site-description {
-  color: #fff !important;
+  color: #fff;
   margin: 0;
   font-size: 0.9em;
   font-style: italic;
@@ -841,7 +838,7 @@ Header Menus
   .main-navigation ul {
     width: 100%; }
   .main-navigation a {
-    color: #fff !important;
+    color: #fff;
     text-decoration: none; }
     .main-navigation a:hover, .main-navigation a:focus {
       text-decoration: underline; }
@@ -892,43 +889,24 @@ header nav ul li {
   color: #fff;
   padding-bottom: 1%; }
 
-#Cota-img, #LifeTec-img, #JCU-img {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-  text-align: center; }
-
-.button-top {
+.button-default {
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
-  background-color: #f44242;
-  /* Set a background color */
+  background-color: #005896;
   color: #fff;
-  /* Text color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
-  font-size: 18px;
-  /* Increase font size */
+  font-size: 16px;
   pointer-events: none;
   opacity: 0;
   transition: opacity .18s ease; }
 
-.button-top-visible {
+.button-is-visible {
   opacity: 1;
   pointer-events: auto; }
 

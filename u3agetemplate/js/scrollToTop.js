@@ -1,22 +1,21 @@
 jQuery(function ($) {
     var $window = $(window);
-    var $buttonTop = $('.button-top');
-    var scrollTimer;
+    var $buttonDefault = $('.button-default');
+    var scrollAmount;
 
-    $buttonTop.on('click', function () {
+    $buttonDefault.on('click', function () {
         $('html, body').animate({
             scrollTop: 0,
         }, 400);
     });
 
     $window.on('scroll', function () {
-        clearTimeout(scrollTimer);
-        scrollTimer = setTimeout(function () {
-
+        clearTimeout(scrollAmount);
+        scrollAmount = setTimeout(function () {
             if ($window.scrollTop() > 10) {
-                $buttonTop.addClass('button-top-visible');
+                $buttonDefault.addClass('button-is-visible');
             } else {
-                $buttonTop.removeClass('button-top-visible');
+                $buttonDefault.removeClass('button-is-visible');
             }
         }, 250);
     });

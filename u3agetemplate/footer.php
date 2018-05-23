@@ -34,7 +34,7 @@
 
 <!-- this area contains code for the button as well as showing and hiding the button-->
 <?php if( get_theme_mod( 'hide_scroll_button', 'show' ) == 'show' ) : ?>
-<button class="button-top">Back to Top</button>
+<button class="button-default">Back to Top</button>
 <?php endif ?>
 
 </body>
